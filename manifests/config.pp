@@ -8,8 +8,9 @@ class apache::config {
     mode   => '0644',
     owner  => 'root',
     group  => 'root',
-  } 
+  }
   @@host { "${hostname}":
     host_aliases => "$fqdn",
     ip           => "$ipaddress",
+  } 
 }
